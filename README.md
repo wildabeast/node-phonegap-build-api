@@ -16,19 +16,11 @@ If something is inaccurate or missing, please send a pull request!
 
 ## Usage
 
-### Authenticate with Username and Password
+### Authenticate using Headless Oauth (client_id, client_secret, auth_token)
 
     var client = require('phonegap-build-api');
 
-    client.auth({ username: 'zelda', password: 'tr1f0rce' }, function(e, api) {
-        // time to make requests
-    });
-
-### Authenticate with Token
-
-    var client = require('phonegap-build-api');
-
-    client.auth({ token: 'abc123' }, function(e, api) {
+    client.auth({ client_id: 'abcdef', client_secret: '1234567', token: 'abcd1234' }, function(e, api) {
         // time to make requests
     });
 
